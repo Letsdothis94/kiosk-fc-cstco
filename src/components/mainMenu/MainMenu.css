@@ -1,0 +1,165 @@
+.main-container {
+    background-color: #FFFFFF;
+    color: #000000;
+    display: flex;
+}
+
+/* order view screen */
+.order-view-screen {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    max-width: 500px;
+    border: 1px solid #000000;
+    height: 917px;
+}
+
+.title-view {
+    border-bottom: 1px solid #000000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Selected Menu */
+
+.order-items-selected {
+    height: 600px;
+}
+
+.selected-item {
+    font-size: 1.3rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.selected-item p {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.pic-edit-price-section {
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 5px;
+}
+
+.pic-edit-price-section img {
+    /* border: 10px solid blue; */
+    margin-right: 10px;
+}
+
+.quantity-edit {
+    /* border: 1px solid yellow; */
+    width: 40%;
+    font-size: 1.3rem;
+}
+
+.quantity-edit p {
+    margin-bottom: 0;
+}
+
+.quantity-edit button {
+    background-color: #009E00;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    padding: 0 28px;
+    border: 4px solid lightgrey;
+}
+
+.price-selected {
+    font-weight: bold;
+    font-size: 1.4rem;
+    /* border: 1px solid blue; */
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+/* buttons SubTotal Cancel Pay */
+
+.sub-total-div {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 2px 0px;
+}
+
+.btn-cancel {
+    background-color: #0077BD;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #000000;
+}
+
+.btn-pay {
+    background-color: #009E00;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* food card container */
+.food-items-container {
+    width: 65%;
+}
+
+/* Food Cards */
+.foodCard {
+    border: 1px solid black;
+    border-radius: 9px;
+    height: 280px;
+    width: 150px;
+    color: #FFFFFF;
+    background-color: #0043B1;
+    font-weight: bold;
+    box-shadow: 4px 8px rgb(0, 0, 0, 0.32 );
+}
+
+.foodCard img {
+    height: 160px; 
+    width: 150px;
+    border-radius: 9px 9px 0 0;
+    margin: 1px 1px 1px 0px;
+    margin-bottom: 0;
+}
+
+.info-food-card {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+.name-section {
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.item-name {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.price-section {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-price {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
