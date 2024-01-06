@@ -94,7 +94,7 @@
         {
             "id": 1,
             "name": "Strawberry Ice Cream Sundae",
-            "image": "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F2unw8xss01eb1.jpg",
+            "image": "https://www.iheartnaptime.net/wp-content/uploads/2022/05/I-Heart-Naptime-strawberry-dole-whip-5.jpg",
             "price": 2.99
         },
         {
@@ -106,7 +106,7 @@
         {
             "id": 3,
             "name": "Strawberry / Vanilla Twist Sundae",
-            "image": "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F2unw8xss01eb1.jpg",
+            "image": "https://www.iheartnaptime.net/wp-content/uploads/2022/05/I-Heart-Naptime-strawberry-dole-whip-5.jpg",
             "price": 2.99
         },
         {
@@ -121,7 +121,7 @@
         {
             "id": 1,
             "name": "Vanilla Ice Cream / Strawberry Sundae",
-            "image": "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F2unw8xss01eb1.jpg",
+            "image": "https://www.iheartnaptime.net/wp-content/uploads/2022/05/I-Heart-Naptime-strawberry-dole-whip-5.jpg",
             "price": 2.49
         },
         {
