@@ -1,7 +1,10 @@
 import React from 'react';
 import '../mainMenu/MainMenu.css';
+import { food, pizzaAndBrew, StrawberrySundae, VanillaSundae } from '../../data/datajs';
 
 function MainMenu() {
+    console.log(food);
+
   return (
     <div className='main-container'>
         <section className='order-view-screen'>
@@ -35,16 +38,81 @@ function MainMenu() {
             </div>
         </section>
         <section className='food-items-container'>
-            <div className='foodCard'>
-                  <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/04/costco-hot-dog-soda.jpg?quality=82&strip=1" alt="hotdog" />
-                  <div className='info-food-card'>
-                    <div className='name-section'>
-                        <p className='item-name'>Hotdog & Soda</p>
-                    </div>
-                    <div className='price-section'>
-                        <p className='item-price'>$1.50</p>
-                    </div>
-                  </div>
+            <div className='single-items'>
+                {
+                    food.map((foodItem) => {
+                        return (
+                            <div className='foodCard' key={foodItem.id}>
+                                <img src={foodItem.image} alt={foodItem.name} />
+                                <div className='info-food-card'>
+                                    <div className='name-section'>
+                                        <p className='item-name'>{foodItem.name}</p>
+                                    </div>
+                                    <div className='price-section'>
+                                        <p className='item-price'>${foodItem.price}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <div className='single-items'>
+                {
+                    pizzaAndBrew.map((foodItem) => {
+                        return (
+                            <div className='foodCard' key={foodItem.id}>
+                                <img src={foodItem.image} alt={foodItem.name} />
+                                <div className='info-food-card'>
+                                    <div className='name-section'>
+                                        <p className='item-name'>{foodItem.name}</p>
+                                    </div>
+                                    <div className='price-section'>
+                                        <p className='item-price'>${foodItem.price}</p>
+                                    </div>
+                                </div>
+                            </div>   
+                        )
+                    })
+                }
+            </div>
+            <div className='single-items'>
+                {
+                    StrawberrySundae.map((foodItem) => {
+                        return (
+                            <div className='foodCard' key={foodItem.id}>
+                                <img src={foodItem.image} alt={foodItem.name} />
+                                <div className='info-food-card'>
+                                    <div className='name-section'>
+                                        <p className='item-name'>{foodItem.name}</p>
+                                    </div>
+                                    <div className='price-section'>
+                                        <p className='item-price'>${foodItem.price}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+            <div className='single-items'>
+                {
+                    VanillaSundae.map((foodItem) => {
+                        return (
+                            <div className='foodCard' key={foodItem.id}>
+                                <img src={foodItem.image} alt={foodItem.name} />
+                                <div className='info-food-card'>
+                                    <div className='name-section'>
+                                        <p className='item-name'>{foodItem.name}</p>
+                                    </div>
+                                    <div className='price-section'>
+                                        <p className='item-price'>${foodItem.price}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </section>
     </div>
