@@ -1,0 +1,49 @@
+/* Food Cards */
+.foodCard {
+    border: 1px solid black;
+    border-radius: 9px;
+    height: 280px;
+    width: 150px;
+    color: #FFFFFF;
+    background-color: #0043B1;
+    font-weight: bold;
+    box-shadow: 4px 8px rgb(0, 0, 0, 0.32);
+}
+
+.foodCard img {
+    height: 160px;
+    width: 150px;
+    border-radius: 9px 9px 0 0;
+    margin: 1px 1px 1px 0px;
+    margin-bottom: 0;
+}
+
+.info-food-card {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+}
+
+.name-section {
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.item-name {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.price-section {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-price {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
