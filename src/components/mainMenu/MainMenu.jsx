@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../mainMenu/MainMenu.css';
 import { food, pizzaAndBrew, StrawberrySundae, VanillaSundae } from '../../data/datajs';
 import FoodCard from '../foodCard/FoodCard';
+import SelectedItem from '../selectedItem/SelectedItem';
 
 function MainMenu() {
     console.log(food);
+    const [order, setOrder] = useState([]);
+
+    const additem = () => {
+        setOrder([foodItem, ...order]);
+    }
 
   return (
     <div className='main-container'>
@@ -13,19 +19,7 @@ function MainMenu() {
                 <p>You can change or remove an item on the receipt by tapping it.</p>
             </div>
             <div className='order-items-selected'>
-                <div className='selected-item'>
-                    <p>Hotdog & Soda</p>
-                    <div className='pic-edit-price-section'>
-                        <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/04/costco-hot-dog-soda.jpg?quality=82&strip=1" height="70px" width="70px" alt='hotdog' />
-                        <div className='quantity-edit'>
-                            <p>Quantity: 1</p>
-                            <button>Edit</button>
-                        </div>
-                        <div className='price-selected'>
-                            <p>$2.99</p>
-                        </div>
-                    </div>
-                </div>
+                <SelectedItem />
             </div>
             <div className='sub-total-div'>
                 <p>Sub-Total:</p>
