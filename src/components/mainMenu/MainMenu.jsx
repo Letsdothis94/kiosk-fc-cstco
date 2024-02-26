@@ -38,12 +38,12 @@ function MainMenu() {
                     {
                         food.map((foodItem) => {
                             return (
-                                <FoodCard foodItem={foodItem} />
+                                <FoodCard key={foodItem.id} foodItem={foodItem} />
                             )
                         })
                     }
                 </div>
-                <div className='single-items'>
+                <div className='single-items pizza-container'>
                     {
                         pizzaAndBrew.map((foodItem) => {
                             return (
@@ -63,7 +63,7 @@ function MainMenu() {
                         })
                     }
                 </div>
-                <div className='single-items'>
+                <div className='single-items pizza-container'>
                     {
                         VanillaSundae.map((foodItem) => {
                             return (
