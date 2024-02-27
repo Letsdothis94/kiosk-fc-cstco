@@ -8,29 +8,7 @@
     padding: 0px;
 }
 
-/* order view screen */
-.order-view-screen {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    max-width: 500px;
-    border: 1px solid #000000;
-    background-color: #FFFFFF;
-    /* height: 99.9vh; */
-}
-
-.title-view {
-    border-bottom: 1px solid #000000;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-/* Selected Menu */
-
-.order-items-selected {
-    height: 90%;
-}
+/* SELECTED ITEM  */
 
 .selected-item {
     font-size: 1.3rem;
@@ -81,38 +59,6 @@
     width: 40%;
     display: flex;
     justify-content: end;
-}
-
-/* buttons SubTotal Cancel Pay */
-
-.sub-total-div {
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 500;
-    border-style: solid;
-    border-width: 2px 0px;
-}
-
-.btn-cancel {
-    background-color: #0077BD;
-    color: #FFFFFF;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.4rem;
-    border-bottom: 1px solid #000000;
-}
-
-.btn-pay {
-    background-color: #009E00;
-    color: #FFFFFF;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.4rem;
-    bottom: 0;
 }
 
 /* food card container */
