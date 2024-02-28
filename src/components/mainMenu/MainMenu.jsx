@@ -16,24 +16,6 @@ function MainMenu() {
   return (
     <div className='main-container'>
         <CartOrder />
-        {/* <section className='order-view-screen'>
-            <div className='title-view'>
-                <p>You can change or remove an item on the receipt by tapping it.</p>
-            </div>
-            <div className='order-items-selected'>
-                <SelectedItem />
-            </div>
-            <div className='sub-total-div'>
-                <p>Sub-Total:</p>
-                <p>$0.00</p>
-            </div>
-            <div className='btn-cancel'>
-                <p>Cancel Order</p>
-            </div>
-            <div className='btn-pay'>
-                <p>Pay for Order</p>
-            </div>
-        </section> */}
         <section className='food-items-container'>
             <div className='top-row-items'>
                 <div className='single-items first-container'>
