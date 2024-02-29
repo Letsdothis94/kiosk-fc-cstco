@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../mainMenu/MainMenu.css';
 import { food, pizzaAndBrew, StrawberrySundae, VanillaSundae } from '../../data/datajs';
 import FoodCard from '../foodCard/FoodCard';
-import SelectedItem from '../selectedItem/SelectedItem';
 import CartOrder from '../CartOrder/CartOrder';
 
 function MainMenu() {
@@ -31,7 +30,7 @@ function MainMenu() {
                     {
                         pizzaAndBrew.map((foodItem) => {
                             return (
-                                <FoodCard foodItem={foodItem} />
+                                <FoodCard key={foodItem.id} foodItem={foodItem} />
                             )
                         })
                     }
@@ -42,7 +41,7 @@ function MainMenu() {
                     {
                         StrawberrySundae.map((foodItem) => {
                             return (
-                                <FoodCard foodItem={foodItem} />
+                                <FoodCard key={foodItem.id} foodItem={foodItem} />
                             )
                         })
                     }
@@ -51,7 +50,7 @@ function MainMenu() {
                     {
                         VanillaSundae.map((foodItem) => {
                             return (
-                                <FoodCard foodItem={foodItem} />
+                                <FoodCard key={foodItem.id} foodItem={foodItem} />
                             )
                         })
                     }
