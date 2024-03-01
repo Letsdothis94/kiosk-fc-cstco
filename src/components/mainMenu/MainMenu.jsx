@@ -6,11 +6,6 @@ import CartOrder from '../CartOrder/CartOrder';
 
 function MainMenu() {
     console.log(food);
-    const [order, setOrder] = useState([]);
-
-    const additem = () => {
-        setOrder([foodItem, ...order]);
-    }
 
   return (
     <div className='main-container'>
