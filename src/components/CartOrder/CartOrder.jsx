@@ -4,7 +4,7 @@ import '../CartOrder/CartOrder.css';
 import { useGlobalContext } from '../../Context';
 
 const CartOrder = () => {
-    const { cart, setCart} = useGlobalContext();
+    const { cart, setCart, total} = useGlobalContext();
     console.log(cart);
 
   return (
@@ -13,11 +13,17 @@ const CartOrder = () => {
               <p>You can change or remove an item on the receipt by tapping it.</p>
           </div>
           <div className='order-items-selected'>
-              <SelectedItem />
+              {
+                cart.map((order) => {
+                    return (
+                        <SelectedItem key={order.id} order={order}/>
+                    )
+                })
+              }
           </div>
           <div className='sub-total-div'>
               <p>Sub-Total:</p>
-              <p>$0.00</p>
+              <p>${total.toFixed(2)}</p>
           </div>
           <div className='btn-cancel'>
               <p>Cancel Order</p>
