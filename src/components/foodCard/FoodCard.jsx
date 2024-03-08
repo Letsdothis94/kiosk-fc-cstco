@@ -1,10 +1,12 @@
-import React from 'react';
 import '../foodCard/FoodCard.css';
+import { useGlobalContext } from '../../Context';
 
 function FoodCard({ foodItem }) {
+   const { addToCart } = useGlobalContext();
     const {id, image, name, price} = foodItem;
+
   return (
-      <div className='foodCard' key={id}>
+      <div className='foodCard' key={id} onClick={() => {addToCart(foodItem)}}>
           <img src={image} alt={name} />
           <div className='info-food-card'>
               <div className='name-section'>
