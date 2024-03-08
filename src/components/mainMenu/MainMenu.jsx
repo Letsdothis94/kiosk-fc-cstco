@@ -3,6 +3,7 @@ import '../mainMenu/MainMenu.css';
 import { food, pizzaAndBrew, StrawberrySundae, VanillaSundae } from '../../data/datajs';
 import FoodCard from '../foodCard/FoodCard';
 import SelectedItem from '../selectedItem/SelectedItem';
+import CartOrder from '../CartOrder/CartOrder';
 
 function MainMenu() {
     console.log(food);
@@ -14,7 +15,8 @@ function MainMenu() {
 
   return (
     <div className='main-container'>
-        <section className='order-view-screen'>
+        <CartOrder />
+        {/* <section className='order-view-screen'>
             <div className='title-view'>
                 <p>You can change or remove an item on the receipt by tapping it.</p>
             </div>
@@ -31,7 +33,7 @@ function MainMenu() {
             <div className='btn-pay'>
                 <p>Pay for Order</p>
             </div>
-        </section>
+        </section> */}
         <section className='food-items-container'>
             <div className='top-row-items'>
                 <div className='single-items first-container'>
