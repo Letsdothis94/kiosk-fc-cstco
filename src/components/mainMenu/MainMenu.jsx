@@ -3,9 +3,11 @@ import '../mainMenu/MainMenu.css';
 import { food, pizzaAndBrew, StrawberrySundae, VanillaSundae } from '../../data/datajs';
 import FoodCard from '../foodCard/FoodCard';
 import CartOrder from '../CartOrder/CartOrder';
+import { useGlobalContext } from '../../Context';
 
 function MainMenu() {
-    console.log(food);
+    const { mainFood, pizzaBrew, berrySundae, vanillaSundaes } = useGlobalContext();
+    console.log(mainFood);
 
   return (
     <div className='main-container'>
@@ -14,7 +16,7 @@ function MainMenu() {
             <div className='top-row-items'>
                 <div className='single-items first-container'>
                     {
-                        food.map((foodItem) => {
+                        mainFood.map((foodItem) => {
                             return (
                                 <FoodCard key={foodItem.id} foodItem={foodItem} />
                             )
@@ -23,7 +25,7 @@ function MainMenu() {
                 </div>
                 <div className='single-items pizza-container'>
                     {
-                        pizzaAndBrew.map((foodItem) => {
+                        pizzaBrew.map((foodItem) => {
                             return (
                                 <FoodCard key={foodItem.id} foodItem={foodItem} />
                             )
@@ -34,7 +36,7 @@ function MainMenu() {
             <div className='bot-row-items'>
                 <div className='single-items first-container'>
                     {
-                        StrawberrySundae.map((foodItem) => {
+                        berrySundae.map((foodItem) => {
                             return (
                                 <FoodCard key={foodItem.id} foodItem={foodItem} />
                             )
@@ -43,7 +45,7 @@ function MainMenu() {
                 </div>
                 <div className='single-items pizza-container'>
                     {
-                        VanillaSundae.map((foodItem) => {
+                        vanillaSundaes.map((foodItem) => {
                             return (
                                 <FoodCard key={foodItem.id} foodItem={foodItem} />
                             )

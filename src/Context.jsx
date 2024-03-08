@@ -1,18 +1,35 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import { food, pizzaAndBrew, StrawberrySundae, VanillaSundae } from './data/data.json';
 
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
+    const [mainFood, setMainFood] = useState(food);
+    const [pizzaBrew, setPizzaBrew] = useState(pizzaAndBrew);
+    const [berrySundae, setBerrySundae] = useState(StrawberrySundae);
+    const [vanillaSundaes, setVanillaSundaes] = useState(VanillaSundae);
     const [cart, setCart] = useState([]);
     const [total, setTotal] = useState(0);
 
-    const addToCart = (foodItem) => {
-        if (cart.includes(foodItem.id)) {
-            foodItem.quantity += 1;
+    const addToCart = (item) => {
+        if (cart.includes(item)) {
+            item.quantity += 1;
+            setTotal(total + item.price);
         } else {
-            setCart([...cart, foodItem]);
+            setCart([...cart, item]);
+            setTotal(total + item.price);
         }
     }
+
+    const cancelOrder = () => {
+        cart.map((item) => item.quantity = 1);
+        setCart([]);
+        setTotal(0);
+    }
+
+    useEffect(() => {
+        cart
+    }, [addToCart]);
 
     return (
         <AppContext.Provider
@@ -21,6 +38,11 @@ const AppProvider = ({ children }) => {
                 setCart,
                 total,
                 addToCart,
+                mainFood,
+                pizzaBrew,
+                berrySundae,
+                vanillaSundaes,
+                cancelOrder,
             }}
         >
             {children}
