@@ -1,8 +1,12 @@
 import React from 'react'
 import SelectedItem from '../selectedItem/SelectedItem';
 import '../CartOrder/CartOrder.css';
+import { useGlobalContext } from '../../Context';
 
 const CartOrder = () => {
+    const { cart, setCart} = useGlobalContext();
+    console.log(cart);
+
   return (
       <section className='order-view-screen'>
           <div className='title-view'>
