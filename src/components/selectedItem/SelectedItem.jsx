@@ -1,4 +1,5 @@
 import React from 'react';
+import '../selectedItem/SelectedItem.css';
 
 function SelectedItem() {
   return (
