@@ -121,7 +121,7 @@
         {
             "id": 1,
             "name": "Vanilla Ice Cream / Strawberry Sundae",
-            "image": "https://www.iheartnaptime.net/wp-content/uploads/2022/05/I-Heart-Naptime-strawberry-dole-whip-5.jpg",
+            "image": "https://www.webstaurantstore.com/images/products/extra_large/602416/2415970.jpg",
             "price": 2.49
         },
         {

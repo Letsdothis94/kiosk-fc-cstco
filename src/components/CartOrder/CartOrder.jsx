@@ -4,7 +4,7 @@ import '../CartOrder/CartOrder.css';
 import { useGlobalContext } from '../../Context';
 
 const CartOrder = () => {
-    const { cart, setCart, total} = useGlobalContext();
+    const { cart, total, cancelOrder} = useGlobalContext();
     console.log(cart);
 
   return (
@@ -25,7 +25,7 @@ const CartOrder = () => {
               <p>Sub-Total:</p>
               <p>${total.toFixed(2)}</p>
           </div>
-          <div className='btn-cancel'>
+          <div className='btn-cancel' onClick={() => {cancelOrder()}}>
               <p>Cancel Order</p>
           </div>
           <div className='btn-pay'>
