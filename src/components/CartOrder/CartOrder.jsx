@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SelectedItem from '../selectedItem/SelectedItem';
 import '../CartOrder/CartOrder.css';
 import { useGlobalContext } from '../../Context';
 
 const CartOrder = () => {
-    const { cart, total, cancelOrder} = useGlobalContext();
+    const { cart, total, cancelOrder, handleCheckout, order } = useGlobalContext();
     console.log(cart);
 
   return (
@@ -29,7 +29,7 @@ const CartOrder = () => {
               <p>Cancel Order</p>
           </div>
           <div className='btn-pay'>
-              <p>Pay for Order</p>
+              <p role='link' onClick={() => {handleCheckout(cart)}}>Pay for Order</p>
           </div>
       </section>
   )
