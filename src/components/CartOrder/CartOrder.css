@@ -19,6 +19,7 @@
 
 .order-items-selected {
     height: 90%;
+    overflow-y: scroll;
 }
 
 .sub-total-div {
