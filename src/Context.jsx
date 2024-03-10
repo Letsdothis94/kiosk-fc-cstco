@@ -1,5 +1,7 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { food, pizzaAndBrew, StrawberrySundae, VanillaSundae } from './data/data.json';
+import { loadStripe } from "@stripe/stripe-js";
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_API_KEY);
 
 const AppContext = React.createContext();
 
@@ -47,9 +49,19 @@ const AppProvider = ({ children }) => {
         setTotal(0);
     }
 
-    useEffect(() => {
-        cart
-    }, [addToCart]);
+    const handleCheckout = async (order) => {
+        const stripe = await stripePromise;
+        const lineItems = order.map(item => ({
+            price: item.id,
+            quantity: item.quantity,
+        }))
+        const { error } = await stripe.redirectToCheckout({
+            lineItems: lineItems,
+            mode: 'payment',
+            successUrl: 'https://example.com/success',
+            cancelUrl: 'http://127.0.0.1:5173/',
+        });
+    }
 
     return (
         <AppContext.Provider
@@ -65,6 +77,7 @@ const AppProvider = ({ children }) => {
                 cancelOrder,
                 addMore,
                 removeOne,
+                handleCheckout,
             }}
         >
             {children}
