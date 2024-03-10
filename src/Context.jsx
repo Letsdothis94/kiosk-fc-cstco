@@ -21,6 +21,26 @@ const AppProvider = ({ children }) => {
         }
     }
 
+    const addMore = (order) => {
+        addToCart(order);
+    }
+
+    const removeOne = (order) => {
+        order.quantity -= 1;
+        if(order.quantity <= 0) {
+            removeItem(order);
+        } else {
+            setTotal(total - order.price);
+        }
+    }
+
+    const removeItem = (order) => {
+        setTotal(total - order.price);
+        let updatedCart = cart.filter(item => item.id !== order.id);
+        order.quantity = 1;
+        setCart(updatedCart);
+    }
+
     const cancelOrder = () => {
         cart.map((item) => item.quantity = 1);
         setCart([]);
@@ -43,6 +63,8 @@ const AppProvider = ({ children }) => {
                 berrySundae,
                 vanillaSundaes,
                 cancelOrder,
+                addMore,
+                removeOne,
             }}
         >
             {children}
