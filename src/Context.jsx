@@ -58,7 +58,7 @@ const AppProvider = ({ children }) => {
         const { error } = await stripe.redirectToCheckout({
             lineItems: lineItems,
             mode: 'payment',
-            successUrl: 'https://example.com/success',
+            successUrl: 'http://127.0.0.1:5173/success',
             cancelUrl: 'http://127.0.0.1:5173/',
         });
     }
