@@ -1,0 +1,13 @@
+.success-section {
+    display: flex;
+    text-align: center;
+    margin: 3em auto;
+}
+
+.success-container {
+    font-size: 2em;
+}
+
+.checkmark-icon {
+    height: 150px;
+}
