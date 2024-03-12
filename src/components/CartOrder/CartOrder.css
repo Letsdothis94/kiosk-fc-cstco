@@ -75,3 +75,26 @@
     font-weight: 600;
     font-size: 1.4em;
 }
+
+@media screen and (max-width: 768px) {
+    .title-view {
+        font-size: 1rem;
+    }
+
+    .message-empty {
+        font-size: 1rem;
+    }
+
+    .sub-total-div {
+        font-size: 1rem;
+    }
+
+    .btn-cancel {
+        font-size: 1rem;
+    }
+
+    .btn-pay {
+        font-size: 1rem;
+    }
+    
+}

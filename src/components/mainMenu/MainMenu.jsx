@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../mainMenu/MainMenu.css';
 import { food, pizzaAndBrew, StrawberrySundae, VanillaSundae } from '../../data/datajs';
 import FoodCard from '../foodCard/FoodCard';
@@ -11,7 +10,7 @@ function MainMenu() {
 
   return (
     <div className='main-container'>
-        <CartOrder />
+        <CartOrder className='cartOrderScreen'/>
         <section className='food-items-container'>
             <div className='top-row-items'>
                 <div className='single-items first-container'>
