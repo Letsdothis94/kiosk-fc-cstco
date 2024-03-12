@@ -11,3 +11,13 @@
 .checkmark-icon {
     height: 150px;
 }
+
+.counter {
+    text-align: end;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}

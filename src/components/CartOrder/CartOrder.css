@@ -53,3 +53,25 @@
     bottom: 0;
     cursor: pointer;
 }
+
+/* Empy cart display */
+.title-view-logo-container {
+    padding: 5px;
+}
+
+.logo-empty {
+    height: 60px;
+    width: 95%;
+}
+
+.empty-msg-div {
+    display: flex;
+    height: 100%;
+    /* justify-content: space-around; */
+}
+
+.message-empty {
+    margin: auto;
+    font-weight: 600;
+    font-size: 1.4em;
+}
