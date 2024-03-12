@@ -27,7 +27,7 @@ const CartOrder = () => {
           <div className='title-view'>
             {empty ? 
                 (<div className='title-view-logo-container'>
-                    <img src="../../public/food-mart-high-resolution-logo-transparent.png" className='logo-empty' />
+                    <img src="images/food-mart-high-resolution-logo-transparent.png" className='logo-empty' />
                 </div>) : 
                 (<p>You can change or remove an item on the receipt by tapping it.</p>)
             }
