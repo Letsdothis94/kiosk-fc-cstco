@@ -59,42 +59,42 @@
     ],
     "pizzaAndBrew":  [
         {
-            "id": 1,
+            "id": "price_1OtdqDI2GiJpbnQlhC9YZErj",
             "name": "Whole Pepperoni",
             "image": "https://i0.wp.com/awesomepizza.ca/wp-content/uploads/2015/01/Papperoni.jpg?fit=700%2C678&ssl=1",
             "price": 9.95,
             "quantity": 1
         },   
         {
-            "id": 2,
+            "id": "price_1OtdrCI2GiJpbnQlXk2Y64ZC",
             "name": "Whole Cheese",
             "image": "https://143892534.cdn6.editmysite.com/uploads/1/4/3/8/143892534/s332370591201761310_p201_i2_w3000.jpeg?width=2560",
             "price": 9.95,
             "quantity": 1
         },
         {
-            "id": 3,
+            "id": "price_1OtdrrI2GiJpbnQl8LONqXWk",
             "name": "1/2 Pepperoni - 1/2 Cheese",
             "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/26721109/1363123115.jpg",
             "price": 9.95,
             "quantity": 1
         },
         {
-            "id": 4,
+            "id": "price_1OtdsaI2GiJpbnQlRuuOwN5J",
             "name": "Cold Brew Mocha Freeze",
             "image": "https://majestycoffee.com/cdn/shop/articles/Latte_Freeze.jpg?v=1684145563",
             "price": 2.99,
             "quantity": 1
         },
         {
-            "id": 5,
+            "id": "price_1Otdt5I2GiJpbnQliTt6qYfb",
             "name": "Fruit Smoothie",
             "image": "https://media.istockphoto.com/id/1313644815/photo/strawberry-smoothie.jpg?s=612x612&w=0&k=20&c=CJ5DBRKWWX_NrH19EIRgJny7gPGNxF8gIVpHNFk8OMs=",
             "price": 2.99,
             "quantity": 1
         },
         {
-            "id": 6,
+            "id": "price_1OtdtbI2GiJpbnQltR6ajquw",
             "name": "Cold Brew Latte Freeze",
             "image": "https://i5.walmartimages.com/seo/100-Pack-32-oz-Clear-Plastic-Cups-Flat-Lids-Disposable-Iced-Coffee-Cups-BPA-Free-Premium-Crystal-Smoothie-Cup-Party-Lemonade-Stand-Cold-Drinks-Juice_e8d99713-aa9a-452f-b3d5-21c5db314564.d18886586d9b1b03e8f25c5c35934569.jpeg",
             "price": 2.99,
@@ -103,28 +103,28 @@
     ],
     "StrawberrySundae": [
         {
-            "id": 1,
+            "id": "price_1OtdvpI2GiJpbnQl91feIrgx",
             "name": "Strawberry Ice Cream Sundae",
             "image": "https://www.iheartnaptime.net/wp-content/uploads/2022/05/I-Heart-Naptime-strawberry-dole-whip-5.jpg",
             "price": 2.99,
             "quantity": 1
         },        
         {
-            "id": 2,
+            "id": "price_1OtdwII2GiJpbnQlbFgWjj9m",
             "name": "Strawberry Ice Cream Cup",
             "image": "https://www.iheartnaptime.net/wp-content/uploads/2022/05/I-Heart-Naptime-strawberry-dole-whip-5.jpg",
             "price": 1.99,
             "quantity": 1
         },
         {
-            "id": 3,
+            "id": "price_1OtdwsI2GiJpbnQlvZzy17zC",
             "name": "Strawberry / Vanilla Twist Sundae",
             "image": "https://www.iheartnaptime.net/wp-content/uploads/2022/05/I-Heart-Naptime-strawberry-dole-whip-5.jpg",
             "price": 2.99,
             "quantity": 1
         },
         {
-            "id": 4,
+            "id": "price_1OtdxLI2GiJpbnQlrTxuxvgw",
             "name": "Strawberry / Vanilla Twist Ice Cream",
             "image": "https://www.iheartnaptime.net/wp-content/uploads/2022/05/I-Heart-Naptime-strawberry-dole-whip-5.jpg",
             "price": 1.99,
@@ -133,21 +133,21 @@
     ],
     "VanillaSundae": [
         {
-            "id": 1,
+            "id": "price_1OtdyPI2GiJpbnQlu3YJTnsT",
             "name": "Vanilla Ice Cream / Strawberry Sundae",
             "image": "https://www.webstaurantstore.com/images/products/extra_large/602416/2415970.jpg",
             "price": 2.49,
             "quantity": 1
         },
         {
-            "id": 2,
+            "id": "price_1Otdz0I2GiJpbnQlstfziwm6",
             "name": "Vanilla Ice Cream Cup",
             "image": "https://www.webstaurantstore.com/images/products/extra_large/602416/2415970.jpg",
             "price": 1.99,
             "quantity": 1
         },
         {
-            "id": 3,
+            "id": "price_1OtdzdI2GiJpbnQlb38BxdqL",
             "name": "Vanilla Ice Cream / Chocolate Sundae",
             "image": "https://i.pinimg.com/originals/36/d1/05/36d10522eb05a602f3cc14d71817e989.jpg",
             "price": 2.49,
