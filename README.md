@@ -8,5 +8,5 @@
 - 4000 0000 0000 9995 (Always fails with a decline code of insufficient_funds).
 
 ##### Installation
-- Clone Repository
+- Fork & Clone Repository
 - npm install & npm run dev
