@@ -1,8 +1,12 @@
-# React + Vite
+# Food Court Kiosk + Stripe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>Inspired by Costco kiosk, this food court project utilizes React JS, Stripe for payments, and ensures responsiveness for desktop and tablet users.</p>
 
-Currently, two official plugins are available:
+#### Payment Method Testing Cards:
+- 4242 4242 4242 4242 (Succeeds and immediately processes the payment).
+- 4000 0025 0000 3155 (Requires 3D Secure 2 authentication for a successful payment).
+- 4000 0000 0000 9995 (Always fails with a decline code of insufficient_funds).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##### Installation
+- Clone Repository
+- npm install & npm run dev
