@@ -50,6 +50,12 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+@media screen and (max-width: 1024px) {
+    .single-items {
+        padding: .5rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main-container {
         flex-direction: row;
