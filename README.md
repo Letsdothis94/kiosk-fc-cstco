@@ -7,6 +7,9 @@
 - 4000 0025 0000 3155 (Requires 3D Secure 2 authentication for a successful payment).
 - 4000 0000 0000 9995 (Always fails with a decline code of insufficient_funds).
 
+##### Website
+- <a href="https://kiosk-food-court.vercel.app/" alt="kiosk food court website deployed" target="_blank">Kiosk FoodCourt Deployed</a>
+
 ##### Installation
 - Fork & Clone Repository
 - npm install & npm run dev
