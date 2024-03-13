@@ -10,7 +10,9 @@ function MainMenu() {
 
   return (
     <div className='main-container'>
-        <CartOrder className='cartOrderScreen'/>
+        {/* <section className='cartOrderScreen'> */}
+            <CartOrder/>
+        {/* </section> */}
         <section className='food-items-container'>
             <div className='top-row-items'>
                 <div className='single-items first-container'>
