@@ -27,7 +27,7 @@ const Success = () => {
         <section className='success-section'>
             <div className='success-container'>
                 <h1>PLEASE TAKE YOUR RECEIPT</h1>
-                <img className='checkmark-icon' src='../../public/check-mark.svg' alt='check-mark icon' />
+                <img className='checkmark-icon' src='images/check-mark.svg' alt='check-mark icon' />
                 <h3>Thank you for shopping at kiosk food-mart.</h3>
                 <p className='counter'>{count}</p>
             </div>
