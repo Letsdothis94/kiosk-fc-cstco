@@ -49,6 +49,8 @@ const AppProvider = ({ children }) => {
         setTotal(0);
     }
 
+    const baseUrl = `https://kiosk-food-court.vercel.app/`;
+
     const handleCheckout = async (order) => {
         const stripe = await stripePromise;
         const lineItems = order.map(item => ({
@@ -58,8 +60,8 @@ const AppProvider = ({ children }) => {
         const { error } = await stripe.redirectToCheckout({
             lineItems: lineItems,
             mode: 'payment',
-            successUrl: '/success',
-            cancelUrl: '/',
+            successUrl: baseUrl + '/success',
+            cancelUrl: baseUrl + '/',
         });
     }
 
