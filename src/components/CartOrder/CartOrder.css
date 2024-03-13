@@ -76,11 +76,6 @@
     font-size: 1.4em;
 }
 
-@media screen and (max-width: 1024px) {
-    .order-view-screen {
-        width: 50%;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .title-view {
