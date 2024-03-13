@@ -9,17 +9,13 @@
     padding: 0px;
 }
 
-.cartOrderScreen {
-    /* width: 40%; */
-}
-
 /* food card container */
 .food-items-container {
     background-color: lightblue;
     display: flex;
     flex-direction: column;
-    /* width: 1930px; */
-    /* max-width: 1930px; */
+    width: 1930px;
+    max-width: 1930px;
 }
 
 .top-row-items {
@@ -55,18 +51,19 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1538px) and (min-width: 769px) {
     .main-container {
-        flex-direction: row;
+        display: flex;
+    }
+
+    .cartOrderScreen {
+        width: 300px;
     }
 
     .single-items {
         padding: .5rem;
     }
 
-    .cartOrderScreen {
-        width: 50%;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -83,9 +80,6 @@
         overflow: scroll;
         width: 70%;
         padding-right: 0.5rem;
-    }
-
-    .top-row-items {
     }
 
     .single-items {

@@ -67,6 +67,10 @@
     .selected-item p {
         font-size: 1rem;
     }
+}
 
-
+@media screen and (max-width: 1538px) and (min-width: 768px) {
+    .selected-item, p {
+        font-size: 1.1rem;
+    }
 }
