@@ -23,7 +23,7 @@ const Success = () => {
 
   return (
     <div className='main-container'>
-        <CartOrder />
+        <CartOrder className='cartOrderS'/>
         <section className='success-section'>
             <div className='success-container'>
                 <h1>PLEASE TAKE YOUR RECEIPT</h1>
