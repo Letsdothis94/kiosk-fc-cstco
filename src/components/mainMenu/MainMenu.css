@@ -51,8 +51,16 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .main-container {
+        flex-direction: row;
+    }
+
     .single-items {
         padding: .5rem;
+    }
+
+    .cartOrderScreen {
+        width: 50%;
     }
 }
 
